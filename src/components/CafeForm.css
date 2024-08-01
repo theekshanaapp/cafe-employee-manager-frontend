@@ -1,0 +1,76 @@
+.cafe-form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .cafe-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cafe-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cafe-form-container form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .cafe-form-container form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .cafe-form-container form .form-group input,
+  .cafe-form-container form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .cafe-form-container form .form-group input[type="file"] {
+    padding: 0;
+  }
+  
+  .cafe-form-container form .form-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .cafe-form-container form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .cafe-form-container form button.submit-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .cafe-form-container form button.submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cafe-form-container form button.cancel-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .cafe-form-container form button.cancel-button:hover {
+    background-color: #c82333;
+  }
+  

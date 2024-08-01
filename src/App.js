@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import HomePage from './components/HomePage';
+import CafeForm from './components/CafeForm';
+import EmployeeList from './components/EmployeeList';
+import EmployeeForm from './components/EmployeeForm';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/add-cafe" element={<CafeForm />} />
+          <Route path="/edit-cafe/:id" element={<CafeForm />} />
+          <Route path="/employees" element={<EmployeeList />} />
+          <Route path="/employees/add" element={<EmployeeForm />} />
+          <Route path="/employees/edit/:id" element={<EmployeeForm />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
